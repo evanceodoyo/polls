@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+{% block content %}
+  <div class="card text-center">
+      <div class="card-body">
+          <h1>Welcome to Polls App</h1>
+          <p>A simple Django up created base on the official Django tutorial.</p>
+          <a href="{% url 'polls:index' %}" class="btn btn-dark">View avialable polls</a>
+      </div>
+  </div>
+{% endblock content %}
